@@ -1,0 +1,158 @@
+/* General Container */
+.vendor-landing-container {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #4caf50; /* Green color for EcoRecycle */
+    padding: 40px 20px;
+  }
+  
+  /* Header Section */
+  .vendor-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .vendor-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .vendor-intro {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Services Section */
+  .vendor-services {
+    margin-bottom: 60px;
+  }
+  
+  .services-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .service-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Vendor Benefits Section */
+  .vendor-benefits {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+  }
+  
+  .benefits-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .benefits-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .benefits-list li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    text-align: center;
+    background-color: #27ac1f; /* Darker green */
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .cta-text {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    background-color: #fff;
+    color: #4caf50;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .services-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .cta-text {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .vendor-title {
+      font-size: 2.5rem;
+    }
+  
+    .vendor-intro,
+    .service-description,
+    .cta-text {
+      font-size: 1rem;
+    }
+  
+    .services-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  

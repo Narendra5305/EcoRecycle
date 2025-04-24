@@ -16,6 +16,10 @@ import VendorDashboard from "./pages/vendor/VendorDashboard"
 import VendorRequests from "./pages/vendor/PickupRequests";
 import Logout from "./pages/logout";
 import Login from "./pages/LoginPage";
+import Footer from "./components/Footer";
+import ContactPage from "./pages/ContactPage";
+import HowItWorks from "./pages/HowItsWorks";
+import ForVendors from "./pages/forVendors";
 
 
 
@@ -30,6 +34,9 @@ function App() {
         <Route path="/" element={<LandingPage/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/how-it-works" element={< HowItWorks/>} />
+        <Route path="/forVendors" element={<ForVendors />} />
         <Route path="/user/dashboard" element={<UserDashboard />} />
         <Route path="/user/schedule" element={<SchedulePickup />} />
         <Route path="/user/requests" element={<UserRequests />} />
@@ -37,7 +44,9 @@ function App() {
         <Route path="/vendor/requests" element={<VendorRequests />} />
         <Route path="/logout" element={<Logout />} />
       </Routes>
-      
+
+      <Footer/>
+
     </Router>
   );
 }

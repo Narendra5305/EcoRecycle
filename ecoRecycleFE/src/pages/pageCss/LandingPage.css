@@ -1,0 +1,128 @@
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #4caf50, #81c784);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+}
+
+.hero-cont-1 {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-cont-1 h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-cont-1 p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero-buttons .primary {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .primary:hover {
+    background-color: #2e7d32;
+}
+
+.hero-cont-2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-cont-1 {
+        padding: 10px;
+    }
+
+    .hero-cont-1 h1 {
+        font-size: 2rem;
+    }
+
+    .hero-cont-1 p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons .primary {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .hero-cont-2 {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-cont-1 h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-cont-1 p {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons .primary {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
