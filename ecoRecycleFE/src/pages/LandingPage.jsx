@@ -1,11 +1,21 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import './pageCss/landingPage.css';
 
 
 
 
 const HeroSection = () => {
+
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (user){
+      localStorage.clear();
+    }
+    
+  });
+
+
   return (
     <section className="hero">
       <div className="hero-cont-1">

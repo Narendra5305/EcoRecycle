@@ -10,7 +10,7 @@ const register = async (req, res) => {
   
     try {
       
-      const userExists = await User.findOne({ email });
+      const userExists = await UserModel.findOne({ email });
       if (userExists) {
         return res.status(400).json({ message: 'User already exists' });
       }
@@ -19,7 +19,7 @@ const register = async (req, res) => {
       const hashed = await bcrypt.hash(password, 10);
   
       
-      const user = new User({
+      const user = new UserModel({
         name,
         email,
         password: hashed,
@@ -39,12 +39,13 @@ const register = async (req, res) => {
     }
   };
   
-  const login = async (req, res) => {
+  
+const login = async (req, res) => {
     const { email, password } = req.body;
   
     try {
      
-      const user = await User.findOne({ email });
+      const user = await UserModel.findOne({ email });
       if (!user) return res.status(404).json({ message: 'User not found' });
   
       

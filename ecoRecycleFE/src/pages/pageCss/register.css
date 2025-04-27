@@ -1,0 +1,55 @@
+.register-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .form-input,
+  .form-select,
+  .submit-btn {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-input:focus,
+  .form-select:focus {
+    outline: none;
+    border-color: #27ac1f;
+    box-shadow: 0 0 5px rgba(39, 172, 31, 0.3);
+  }
+  
+  .submit-btn {
+    background-color: #27ac1f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .submit-btn:hover {
+    background-color: #219d1d;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #a6d6a0;
+    cursor: not-allowed;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  

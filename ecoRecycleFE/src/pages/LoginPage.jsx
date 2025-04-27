@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState , useContext} from 'react';
 import { useLoginMutation } from '../services/api';
 import { useNavigate } from 'react-router-dom';
 import "./pageCss/login.css"; 
 
+
+
 const Login = () => {
+
+    
     const [login, { isLoading, error }] = useLoginMutation();
     const [formData, setFormData] = useState({
       email: '',
@@ -19,6 +23,7 @@ const Login = () => {
       }));
     };
   
+
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
@@ -26,16 +31,25 @@ const Login = () => {
   
         localStorage.setItem('token', response.token);
         localStorage.setItem('user', JSON.stringify(response.user));
+
+        const userRole = response.user.role; 
+        if (userRole === 'user'){
+            navigate('/user/dashboard');
+        }else{
+            navigate('/vendor/dashboard');
+        }
   
-        navigate('/dashboard');
+        
       } catch (err) {
         console.error('Login error:', err);
       }
     };
+
+    
   
     return (
       <div className="login-container">
-        {/* Logo Area with text */}
+        
         <div className="login-logo">
           <h1 className="logo-text">🌿EcoRecycle</h1>
         </div>

@@ -5,7 +5,14 @@ const baseUrl = 'http://localhost:8080';
 
 export const api = createApi({
   reducerPath: 'api',
-  baseQuery: fetchBaseQuery({ baseUrl }),
+  baseQuery: fetchBaseQuery({ baseUrl ,prepareHeaders: (headers) => {
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (user && user.token) {
+      headers.set('Authorization', `Bearer ${user.token}`);
+    }
+    return headers;
+    },
+  }),
   endpoints: (builder) => ({
     
     register: builder.mutation({

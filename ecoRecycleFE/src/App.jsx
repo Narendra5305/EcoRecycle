@@ -28,7 +28,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar user={user} />
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<LandingPage/>} />
@@ -37,9 +37,12 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/how-it-works" element={< HowItWorks/>} />
         <Route path="/forVendors" element={<ForVendors />} />
+
         <Route path="/user/dashboard" element={<UserDashboard />} />
         <Route path="/user/schedule" element={<SchedulePickup />} />
         <Route path="/user/requests" element={<UserRequests />} />
+
+
         <Route path="/vendor/dashboard" element={<VendorDashboard />} />
         <Route path="/vendor/requests" element={<VendorRequests />} />
         <Route path="/logout" element={<Logout />} />

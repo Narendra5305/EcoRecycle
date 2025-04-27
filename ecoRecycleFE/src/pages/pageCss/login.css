@@ -10,12 +10,13 @@
     border-radius: 10px;
   
 }
-    .login-logo {
+
+.login-logo {
       text-align: center;
       margin-bottom: 30px;
     }
   
-    .login-logo .logo-text {
+.login-logo .logo-text {
       font-size: 2.5rem;
       font-weight: bold;
       color: #4caf50; 
@@ -24,82 +25,80 @@
     }
   
     
-    .login-form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .login-form .form-title {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-  
-    .login-form .form-group {
-      margin-bottom: 15px;
-      margin-top: 10px;
-    }
-  
-    .login-form .input-field {
-      width: 100%;
-      padding: 12px;
-      font-size: 1rem;
-      border: 1px solid #4caf50; 
-      border-radius: 5px;
-      color: #4caf50; 
-      background-color: white;
-    }
-  
-    .login-form .login-btn {
-      width: 107%;
-      padding: 12px;
-      font-size: 1rem;
-      background-color: #4caf50; 
-      color: white; 
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-  
-    .login-form .login-btn:hover {
-      background-color: #45a049; /* Darker shade for hover effect */
-    }
-  
-    .login-form .login-btn:disabled {
-      background-color: #c7c7c7;
-      cursor: not-allowed;
-    }
-  
-    /* Error message styling */
-    .error-message {
-      text-align: center;
-      color: red;
-    }
-  
-    /* Register link section */
-    .register-link {
-      text-align: center;
-      margin-top: 20px;
-    }
-  
-    .register-link .register-text {
-      margin-bottom: 10px;
-    }
-  
-    .register-link .register-btn {
-      padding: 10px 20px;
-      background-color: #4caf50; /* Button color matches background */
-      color: white; /* Button text color */
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-  
-    .register-link .register-btn:hover {
-      background-color: #45a049; /* Darker shade for hover effect */
-    }
-  
-  
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-form .form-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.login-form .input-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #4caf50; 
+    border-radius: 5px;
+    color: #4caf50; 
+    background-color: white;
+}
+
+.login-form .login-btn {
+    width: 107%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #4caf50; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form .login-btn:hover {
+    background-color: #45a049; 
+}
+
+.login-form .login-btn:disabled {
+    background-color: #c7c7c7;
+    cursor: not-allowed;
+}
+
+
+.error-message {
+    text-align: center;
+    color: red;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link .register-text {
+    margin-bottom: 10px;
+}
+
+.register-link .register-btn {
+    padding: 10px 20px;
+    background-color: #4caf50; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-link .register-btn:hover {
+    background-color: #45a049; 
+}
+

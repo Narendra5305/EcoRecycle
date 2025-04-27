@@ -3,6 +3,8 @@ const {SlotModel}  = require('../models/slot.model');
 
 const createSlot = async (req, res) => {
     const { date, time, city, pincode } = req.body;
+
+    console.log("Received data:", req.body); 
     const slot = new SlotModel({
       vendor: req.user._id,
       date,
@@ -13,7 +15,10 @@ const createSlot = async (req, res) => {
     });
     await slot.save();
     res.status(201).json(slot);
-  };
+};
+
+
+
   
 const getAvailableSlots = async (req, res) => {
     const { pincode, city } = req.query;

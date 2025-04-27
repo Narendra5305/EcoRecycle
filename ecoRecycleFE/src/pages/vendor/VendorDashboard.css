@@ -1,0 +1,75 @@
+
+.dashboard-container {
+    background-color: white;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .dashboard-title {
+    color: green;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .create-slot-container, .slots-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    color: green;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .create-slot-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .submit-button {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .slots-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .slots-table th,
+  .slots-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .slots-table th {
+    background-color: #27ac1f;
+    color: white;
+  }
+  
+  .slots-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  

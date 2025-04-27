@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect , useContext } from 'react';
 import './coponentCss/navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -8,9 +8,13 @@ const AppNavbar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const storedRole = localStorage.getItem('role');
-    setRole(storedRole);
-  }, []);
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      const parsedUser = JSON.parse(storedUser);
+      setRole(parsedUser.role);
+    }
+  });
+
 
   const handleLogout = () => {
     localStorage.clear();
@@ -33,7 +37,7 @@ const AppNavbar = () => {
       case 'vendor':
         return (
           <>
-            <li><Link to="/dashboard" onClick={() => setMenuOpen(false)}>Dashboard</Link></li>
+            <li><Link to="/vendor/dashboard" onClick={() => setMenuOpen(false)}>Dashboard</Link></li>
             <li><Link to="/requests" onClick={() => setMenuOpen(false)}>Pickup Requests</Link></li>
             <li><Link to="/routes" onClick={() => setMenuOpen(false)}>Manage Routes</Link></li>
             <li><Link to="/support" onClick={() => setMenuOpen(false)}>Support</Link></li>
